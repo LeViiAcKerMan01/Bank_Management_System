@@ -11,7 +11,7 @@ class Bank{
     char address[100];
     char y;
     int balance;
-    
+
     public:
        
     void open_account();
@@ -68,6 +68,7 @@ int main()
 {
     int ch, x;
     Bank obj;
+    
     do
     {
     cout<<"1) Open Account \n";
