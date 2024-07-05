@@ -10,7 +10,7 @@ class Bank{
     char name[100];
     char address[100];
     char y;
-    int balance;
+    int balance = 0;
 
     public:
        
@@ -47,10 +47,10 @@ void Bank :: deposit_money()
 
 void Bank :: display_account()
 {
-    cout<<"Your full name : "<<name;
-    cout<<"Your Address : \t "<<address;
-    cout<<"Type of acoount : \t "<<y;
-    cout<<"Amount deposited : \t "<<balance;
+    cout<<"Your full name : "<<name<<endl;
+    cout<<"Your Address : \t "<<address<<endl;
+    cout<<"Type of acoount : \t "<<y<<endl;
+    cout<<"Amount deposited : \t "<<balance<<endl;
 }
 
 void Bank :: withdraw_money()
@@ -68,7 +68,7 @@ int main()
 {
     int ch, x;
     Bank obj;
-    
+
     do
     {
     cout<<"1) Open Account \n";
